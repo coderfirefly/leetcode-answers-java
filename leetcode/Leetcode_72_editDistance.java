@@ -1,0 +1,62 @@
+/**
+ * <a href="https://leetcode.com/problems/edit-distance/">编辑距离</a>
+ */
+public class Leetcode_72_editDistance {
+    /**
+     * 方法1： DP
+     */
+    public int minDistance(String word1, String word2) {
+        int m = word1.length(), n = word2.length();
+        int[][] dp = new int[m + 1][n + 1];
+        for (int i = 0; i <= m; i++) {
+            dp[i][0] = i;
+        }
+        for (int i = 0; i <= n; i++) {
+            dp[0][i] = i;
+        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++)  {
+                if (word1.charAt(i) == word2.charAt(j)) {
+                    dp[i + 1][j + 1] = dp[i][j];
+                } else {
+                    dp[i + 1][j + 1] = Math.min(dp[i][j], Math.min(dp[i][j + 1], dp[i + 1][j])) + 1;
+                }
+            }
+        }
+        return dp[m][n];
+    }
+
+    /**
+     * 方法2：DP 压缩数组
+     */
+    public int minDistance2(String word1, String word2) {
+        int m = word1.length();
+        int n = word2.length();
+        int[] dp = new int[n + 1];
+        for (int i = 0; i <= n; i++) {
+            dp[i] = i;
+        }
+
+        for (int i = 1; i <= m; i++) {
+            int prev = dp[0];
+            dp[0] = i;
+            for (int j = 1; j <= n; j++) {
+                int tmp = dp[j];
+                if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
+                    dp[j] = prev;
+                } else {
+                    dp[j] = 1 + Math.min(dp[j - 1], Math.min(dp[j], prev));
+                }
+                prev = tmp;
+            }
+        }
+        return dp[n];
+    }
+
+
+    public static void main(String[] args) {
+        Leetcode_72_editDistance solution = new Leetcode_72_editDistance();
+        System.out.println(solution.minDistance("horse", "ros"));
+        System.out.println(solution.minDistance2("horse", "ros"));
+    }
+}
