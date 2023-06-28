@@ -1,5 +1,6 @@
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * 最长公共子串
@@ -38,6 +39,6 @@ public class Leetcode_LongestCommonSubstring {
 
     @Test
     public void test() {
-        Assertions.assertEquals("12345", lcs("1AB2345CD", "12345EF"));
+        assertEquals("12345", lcs("1AB2345CD", "12345EF"));
     }
 }

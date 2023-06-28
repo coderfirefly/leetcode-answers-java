@@ -1,4 +1,4 @@
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -9,7 +9,6 @@ public class Leetcode_146_lruCache {
     /**
      * 方法1：直接使用LinkedHashMap
      */
-
     class LRUCache extends LinkedHashMap<Integer, Integer> {
         private int capacity;
 
@@ -33,11 +32,11 @@ public class Leetcode_146_lruCache {
     }
 
     /**
-     * 方法2：使用HashTable和自定义双向链表
+     * 方法2：使用HashMap和双向链表
      */
     static class LRUCache2 {
 
-        private Hashtable<Integer, DLinkedNode> cache = new Hashtable<>();
+        private HashMap<Integer, DLinkedNode> cache = new HashMap<>();
         private int size;
         private int capacity;
         private DLinkedNode head;
