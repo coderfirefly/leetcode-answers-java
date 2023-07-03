@@ -2,10 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <a href="https://leetcode.com/problems/subsets/">集合的所有子集</a>
+ * <a href=https://leetcode.cn/problems/subsets/>78. 子集</a>
  */
 public class Leetcode_78_subsets {
 
+    /**
+     * DFS + 回溯
+     */
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         if (nums == null) {
@@ -24,7 +27,6 @@ public class Leetcode_78_subsets {
         helper(nums, level + 1, res, path);
         path.add(nums[level]);
         helper(nums, level + 1, res, path);
-
         path.remove(path.size()-1);
     }
 }

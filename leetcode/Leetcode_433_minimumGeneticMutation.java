@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Set;
 
 /**
  * <a href="https://leetcode.com/problems/minimum-genetic-mutation/">最小基因变化</a>
@@ -57,7 +60,7 @@ public class Leetcode_433_minimumGeneticMutation {
     public static void main(String[] args) {
         String start = "AACCGGTT";
         String end = "AAACGGTA";
-        String[] bank = new String[]{"AACCGGTA","AACCGCTA","AAACGGTA"};
+        String[] bank = new String[]{"AACCGGTA", "AACCGCTA", "AAACGGTA"};
         System.out.println(minMutation(start, end, bank));
     }
 

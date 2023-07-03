@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * <a href="https://leetcode.com/problems/n-queens/">N皇后</a>
+ * <a href=https://leetcode.cn/problems/n-queens/>51. N 皇后</a>
  */
 public class Leetcode_51_nQueens {
     /**
@@ -17,12 +17,21 @@ public class Leetcode_51_nQueens {
         return processResult(n, res);
     }
 
+    /**
+     * @param n
+     * @param row
+     * @param res
+     * @param path
+     * @param usedCols 某一列上是否有皇后
+     * @param usedMajors 某一条主对角线上是否有皇后
+     * @param usedMinors 某一条副对角线上是否有皇后
+     */
     private void helper(int n,
                         int row,
                         List<List<Integer>> res,
                         List<Integer> path,
                         boolean[] usedCols,
-                        boolean[] usedMains,
+                        boolean[] usedMajors,
                         boolean[] usedMinors) {
         if (row == n) {
             res.add(new ArrayList<>(path));
@@ -30,19 +39,19 @@ public class Leetcode_51_nQueens {
         }
 
         for (int col = 0; col < n; col++) {
-            if (usedCols[col] || usedMains[row + col] || usedMinors[row - col + n - 1]) {
+            if (usedCols[col] || usedMajors[row + col] || usedMinors[row - col + n - 1]) {
                 continue;
             }
 
             path.add(col);
             usedCols[col] = true;
-            usedMains[row + col] = true;
+            usedMajors[row + col] = true;
             usedMinors[row - col + n - 1] = true;
-            helper(n, row + 1, res, path, usedCols, usedMains, usedMinors);
+            helper(n, row + 1, res, path, usedCols, usedMajors, usedMinors);
 
             path.remove(path.size() - 1);
             usedCols[col] = false;
-            usedMains[row + col] = false;
+            usedMajors[row + col] = false;
             usedMinors[row - col + n - 1] = false;
         }
     }
@@ -51,7 +60,7 @@ public class Leetcode_51_nQueens {
         List<List<String>> boards = new ArrayList<>();
         for (List<Integer> list : res) {
             List<String> tmp = new ArrayList<>();
-            for(Integer i : list) {
+            for (Integer i : list) {
                 char[] chars = new char[n];
                 Arrays.fill(chars, '.');
                 chars[i] = 'Q';

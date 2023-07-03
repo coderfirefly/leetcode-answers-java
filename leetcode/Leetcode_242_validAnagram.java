@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 /**
- *
  * <a href=https://leetcode.cn/problems/valid-anagram>242.有效的字母异位词</a>
  */
 public class Leetcode_242_validAnagram {
@@ -32,6 +31,25 @@ public class Leetcode_242_validAnagram {
         }
         for (int i = 0; i < counter.length; i++) {
             if (counter[i] != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    public boolean isAnagram3(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        int[] arr = new int[26];
+        for (char c : s.toCharArray()) {
+            arr[c-'a']++;
+        }
+        for (char c : t.toCharArray()) {
+            arr[c-'a']--;
+            if (arr[c-'a'] < 0) {
                 return false;
             }
         }

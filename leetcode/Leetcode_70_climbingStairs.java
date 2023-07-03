@@ -20,6 +20,22 @@ public class Leetcode_70_climbingStairs {
     }
 
     /**
+     * 每次爬1级或2级
+     * 方法2：不用数组
+     */
+    public int climbStairs5(int n) {
+        if (n <= 2) {
+            return n;
+        }
+        int f1 = 1, f2 = 2, f3 = 3;
+        for (int i = 3; i <= n; i++) {
+            f3 = f1 + f2;
+            f1 = f2;
+            f2 = f3;
+        }
+        return f3;
+    }
+    /**
      * 2. 每次爬1级、2级或3级
      */
     public int climbStairs2(int n) {

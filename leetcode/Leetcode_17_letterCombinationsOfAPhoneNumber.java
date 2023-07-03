@@ -17,31 +17,35 @@ public class Leetcode_17_letterCombinationsOfAPhoneNumber {
             return res;
         }
 
+        Map<Character, String> dict = new HashMap<>();
+        initDict(dict);
 
-        Map<Character, String> phoneMap = new HashMap<>();
-        phoneMap.put('2', "abc");
-        phoneMap.put('3', "def");
-        phoneMap.put('4', "ghi");
-        phoneMap.put('5', "jkl");
-        phoneMap.put('6', "mno");
-        phoneMap.put('7', "pqrs");
-        phoneMap.put('8', "tuv");
-        phoneMap.put('9', "wxyz");
-
-        helper(digits, 0, "", res, phoneMap);
+        helper(digits, dict, res, new StringBuilder(), 0);
         return res;
     }
 
-
-    private void helper(String digits, int level, String path, List<String> res, Map<Character, String> phoneMap) {
+    private void helper(String digits, Map<Character, String> dict, List<String> res, StringBuilder curStr, int level) {
         if (level == digits.length()) {
-            res.add(path);
+            res.add(curStr.toString());
             return;
         }
 
-        String letters = phoneMap.get(digits.charAt(level));
-        for (int i = 0; i < letters.length(); i++) {
-            helper(digits, level + 1, path + letters.charAt(i), res, phoneMap);
+        String str = dict.get(digits.charAt(level));
+        for (int i = 0; i < str.length(); i++) {
+            curStr.append(str.charAt(i));
+            helper(digits, dict, res, curStr, level + 1);
+            curStr.deleteCharAt(level);
         }
+    }
+
+    private void initDict(Map<Character, String> dict) {
+        dict.put('2', "abc");
+        dict.put('3', "def");
+        dict.put('4', "ghi");
+        dict.put('5', "jkl");
+        dict.put('6', "mno");
+        dict.put('7', "pqrs");
+        dict.put('8', "tuv");
+        dict.put('9', "wxyz");
     }
 }
