@@ -1,7 +1,4 @@
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Set;
+import java.util.*;
 
 /**
  * <a href="https://leetcode.com/problems/minimum-genetic-mutation/">最小基因变化</a>
@@ -55,7 +52,6 @@ public class Leetcode_433_minimumGeneticMutation {
 
         return -1;
     }
-
 
     public static void main(String[] args) {
         String start = "AACCGGTT";

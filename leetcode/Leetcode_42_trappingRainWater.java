@@ -8,6 +8,9 @@ import java.util.Deque;
  * @Date 2023/6/28
  */
 public class Leetcode_42_trappingRainWater {
+    /**
+     * 方法1：单调栈
+     */
     public int trap(int[] height) {
         int res = 0;
         Deque<Integer> stack = new ArrayDeque<>();
@@ -23,6 +26,26 @@ public class Leetcode_42_trappingRainWater {
                 res += wi * hi;
             }
             stack.push(i);
+        }
+        return res;
+    }
+
+    /**
+     * 方法2：双指针
+     */
+    public int trap2(int[] height) {
+        int res = 0;
+        int left = 0, leftMax = height[0], right = height.length - 1, rightMax = height[height.length - 1];
+        while (left < right) {
+            if (height[left] < height[right]) {
+                leftMax = Math.max(leftMax, height[left]);
+                res += leftMax - height[left];
+                left++;
+            } else {
+                rightMax = Math.max(rightMax, height[right]);
+                res += rightMax - height[right];
+                right--;
+            }
         }
         return res;
     }
