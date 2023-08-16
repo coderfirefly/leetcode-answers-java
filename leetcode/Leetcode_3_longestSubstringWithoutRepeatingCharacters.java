@@ -4,7 +4,7 @@ import java.util.Map;
 /**
  * <a href=https://leetcode.cn/problems/longest-substring-without-repeating-characters/>3. 无重复字符的最长子串</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/2/11
  */
 public class Leetcode_3_longestSubstringWithoutRepeatingCharacters {

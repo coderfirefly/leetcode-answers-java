@@ -1,7 +1,7 @@
 package offer;
 
 /**
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 class Node {

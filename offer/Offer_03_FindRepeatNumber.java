@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof>剑指 Offer 03. 数组中重复的数字</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_03_FindRepeatNumber {

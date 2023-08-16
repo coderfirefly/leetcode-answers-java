@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof>剑指 Offer 10- I. 斐波那契数列</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/18
  */
 public class Offer_10_I_Fib {

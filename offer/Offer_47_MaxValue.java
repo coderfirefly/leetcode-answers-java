@@ -2,7 +2,7 @@ package offer;
 
 /**
  * <a href=https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof>剑指 Offer 47. 礼物的最大价值</a>
- * @author firefly
+ * @Author phoebe
  * @date 2023/4/1
  */
 public class Offer_47_MaxValue {

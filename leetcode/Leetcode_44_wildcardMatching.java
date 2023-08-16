@@ -1,7 +1,7 @@
 /**
  * <a href=https://leetcode.cn/problems/wildcard-matching/>44. 通配符匹配</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/01/01
  */
 public class Leetcode_44_wildcardMatching {

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 /**
  * <a href="https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf">最小的 K 个数</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/24
  */
 public class Leetcode_GetLeastNumbers {

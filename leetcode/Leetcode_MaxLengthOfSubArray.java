@@ -3,7 +3,7 @@ import java.util.Map;
 
 /**
  * <a href="https://www.nowcoder.com/practice/b56799ebfd684fb394bd315e89324fb4">最长不重复子数组</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/25
  */
 public class Leetcode_MaxLengthOfSubArray {

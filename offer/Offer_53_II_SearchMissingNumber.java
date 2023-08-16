@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/>剑指 Offer 53 - II. 0～n-1中缺失的数字</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_53_II_SearchMissingNumber {

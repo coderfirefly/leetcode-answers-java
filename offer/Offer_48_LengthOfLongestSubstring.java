@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * <a href=https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof>剑指 Offer 48. 最长不含重复字符的子字符串</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/4/1
  */
 public class Offer_48_LengthOfLongestSubstring {

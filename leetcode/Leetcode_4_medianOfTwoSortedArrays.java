@@ -1,7 +1,7 @@
 /**
  * <a href=https://leetcode.cn/problems/median-of-two-sorted-arrays>4. 寻找两个正序数组的中位数</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/2/11
  */
 public class Leetcode_4_medianOfTwoSortedArrays {

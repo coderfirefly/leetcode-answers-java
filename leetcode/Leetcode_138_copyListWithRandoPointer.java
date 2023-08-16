@@ -1,16 +1,13 @@
-package offer;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <a href=https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof>剑指 Offer 35. 复杂链表的复制</a>
+ * <a href=https://leetcode.cn/problems/copy-list-with-random-pointer>138. 复制带随机指针的链表</a>
  *
  * @Author phoebe
- * @date 2023/3/11
+ * @Date 2023/8/16
  */
-public class Offer_35_CopyLinkedList {
-
+public class Leetcode_138_copyListWithRandoPointer {
     public Node copyRandomList(Node head) {
         Map<Node, Node> map = new HashMap<>();
         Node cur = head;
@@ -25,5 +22,17 @@ public class Offer_35_CopyLinkedList {
             cur = cur.next;
         }
         return map.get(head);
+    }
+
+    class Node {
+        int val;
+        Node next;
+        Node random;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
     }
 }

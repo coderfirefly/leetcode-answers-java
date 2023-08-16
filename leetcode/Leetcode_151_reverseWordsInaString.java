@@ -5,7 +5,7 @@ import java.util.Collections;
 
 /**
  * <a href=https://leetcode.cn/problems/reverse-words-in-a-string/>151. 反转字符串中的单词</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/30
  */
 public class Leetcode_151_reverseWordsInaString {

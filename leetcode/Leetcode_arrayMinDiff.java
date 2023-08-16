@@ -1,7 +1,7 @@
 /**
  *  数组拆分成两个子集，差值最小
  * <a href=https://www.cnblogs.com/ranjiewen/p/9085049.html />
- * @author firefly
+ * @Author phoebe
  * @date 2021/5/7
  */
 public class Leetcode_arrayMinDiff {

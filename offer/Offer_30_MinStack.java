@@ -9,7 +9,7 @@ import java.util.Deque;
 /**
  * <a href=https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof>剑指 Offer 30. 包含min函数的栈</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/11
  */
 public class Offer_30_MinStack {

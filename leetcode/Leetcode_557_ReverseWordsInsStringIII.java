@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 /**
  * <a href=https://leetcode.cn/problems/reverse-words-in-a-string-iii/>557. 反转字符串中的单词 III</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2022/12/24
  */
 public class Leetcode_557_ReverseWordsInsStringIII {

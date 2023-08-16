@@ -2,7 +2,7 @@ import java.util.Stack;
 
 /**
  * <a href=https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6>用两个栈实现一个队列</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/25
  */
 public class Leetcode_TwoStack2Queue {

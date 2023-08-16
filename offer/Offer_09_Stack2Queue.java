@@ -9,7 +9,7 @@ import java.util.Deque;
 /**
  * <a href=https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof>剑指 Offer 09. 用两个栈实现队列</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/11
  */
 public class Offer_09_Stack2Queue {

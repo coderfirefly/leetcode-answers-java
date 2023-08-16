@@ -1,6 +1,6 @@
 /**
  * <a href=https://www.nowcoder.com/practice/6ab1d9a29e88450685099d45c9e31e46>两个链表的第一个公共节点</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/30
  */
 public class Leetcode_findFirstCommonNode {

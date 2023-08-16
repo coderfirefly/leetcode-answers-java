@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof>剑指 Offer 04. 二维数组中的查找</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_44_FindNumberIn2DArray {

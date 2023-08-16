@@ -2,7 +2,7 @@ import java.util.PriorityQueue;
 
 /**
  * <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">数组第K大的元素</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/24
  */
 public class Leetcode_215_KthLargestElementInAnArray {

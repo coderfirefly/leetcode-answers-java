@@ -3,7 +3,7 @@ import org.junit.Test;
 
 /**
  * <a href=https://leetcode.cn/problems/longest-common-subsequence>1143. 最长公共子序列</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/30
  */
 public class Leetcode_1143_longestCommonSubsequence {

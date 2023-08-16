@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/ti-huan-kong-ge-lcof>剑指 Offer 05. 替换空格</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_05_ReplaceSpace {

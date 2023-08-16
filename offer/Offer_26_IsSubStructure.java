@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof>剑指 Offer 26. 树的子结构</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_26_IsSubStructure {

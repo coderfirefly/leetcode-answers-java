@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * 最长公共子串
  *
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/30
  */
 public class Leetcode_LongestCommonSubstring {

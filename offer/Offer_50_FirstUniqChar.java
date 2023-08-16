@@ -2,7 +2,7 @@ package offer;
 
 /**
  * <a href=https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof>剑指 Offer 50. 第一个只出现一次的字符</a>
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_50_FirstUniqChar {

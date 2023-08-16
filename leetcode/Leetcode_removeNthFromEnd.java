@@ -1,6 +1,6 @@
 /**
  * <a href=https://www.nowcoder.com/practice/f95dcdafbde44b22a6d741baf71653f6>移除链表的倒数第N个节点</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/25
  */
 public class Leetcode_removeNthFromEnd {

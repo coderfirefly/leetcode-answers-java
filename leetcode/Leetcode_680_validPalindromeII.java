@@ -4,7 +4,7 @@ import org.junit.Test;
 /**
  * <a href=https://leetcode.cn/problems/valid-palindrome-ii/>680. 验证回文串 II</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2022/12/30
  */
 public class Leetcode_680_validPalindromeII {

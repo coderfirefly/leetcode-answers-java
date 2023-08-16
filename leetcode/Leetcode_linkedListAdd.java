@@ -1,6 +1,6 @@
 /**
  * <a href=https://www.nowcoder.com/practice/c56f6c70fb3f4849bc56e33ff2a50b6b>两个链表生成相加链表</a>
- * @author firefly
+ * @Author phoebe
  * @date 2021/3/30
  */
 public class Leetcode_linkedListAdd {

@@ -2,7 +2,7 @@ package offer;
 
 /**
  * <a href=https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof>剑指 Offer 27. 二叉树的镜像</a>
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/12
  */
 public class Offer_27_MirrorTree {

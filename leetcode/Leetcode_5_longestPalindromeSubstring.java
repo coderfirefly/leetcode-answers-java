@@ -1,7 +1,7 @@
 /**
  * <a href=https://leetcode.cn/problems/longest-palindromic-substring>5. 最长回文子串</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2022/12/31
  */
 public class Leetcode_5_longestPalindromeSubstring {

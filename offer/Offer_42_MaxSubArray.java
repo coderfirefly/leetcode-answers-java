@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof>剑指 Offer 42. 连续子数组的最大和</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/4/1
  */
 public class Offer_42_MaxSubArray {

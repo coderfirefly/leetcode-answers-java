@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof>剑指 Offer 63. 股票的最大利润</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/4/1
  */
 public class Offer_63_MaxProfit {

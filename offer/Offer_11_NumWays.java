@@ -2,7 +2,7 @@ package offer;
 
 /**
  * <a href=https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof>剑指 Offer 10- II. 青蛙跳台阶问题</a>
- * @author firefly
+ * @Author phoebe
  * @date 2023/4/1
  */
 public class Offer_11_NumWays {

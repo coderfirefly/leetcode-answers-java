@@ -6,6 +6,9 @@ import java.util.Set;
  */
 
 public class Leetcode_141_linkedListCycle {
+    /**
+     * 方法1：快慢指针
+     */
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;
@@ -22,6 +25,9 @@ public class Leetcode_141_linkedListCycle {
         return true;
     }
 
+    /**
+     * 方法2：集合
+     */
     public boolean hasCycle2(ListNode head) {
         Set<ListNode> nodeSet = new HashSet<>();
         while (head != null) {
@@ -35,15 +41,18 @@ public class Leetcode_141_linkedListCycle {
         return false;
     }
 
-    // Definition for singly-linked list.
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
+    /**
+     * 方法3：快慢指针
+     */
+    public boolean hasCycle3(ListNode head) {
+        ListNode p1 = head, p2 = head;
+        while (p2 != null && p2.next != null) {
+            p1 = p1.next;
+            p2 = p2.next.next;
+            if (p1 == p2) {
+                return true;
+            }
         }
+        return false;
     }
-
 }

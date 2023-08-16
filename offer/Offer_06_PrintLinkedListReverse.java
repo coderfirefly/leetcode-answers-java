@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * <a href=https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof>剑指 Offer 06. 从尾到头打印链表</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/11
  */
 public class Offer_06_PrintLinkedListReverse {

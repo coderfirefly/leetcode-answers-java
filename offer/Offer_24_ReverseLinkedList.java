@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof>剑指 Offer 24. 反转链表</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/3/11
  */
 public class Offer_24_ReverseLinkedList {

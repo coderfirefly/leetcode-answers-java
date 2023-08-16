@@ -3,7 +3,7 @@ package offer;
 /**
  * <a href=https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof>剑指 Offer 46. 把数字翻译成字符串</a>
  *
- * @author firefly
+ * @Author phoebe
  * @date 2023/4/1
  */
 public class Offer_46_TranslateNum {

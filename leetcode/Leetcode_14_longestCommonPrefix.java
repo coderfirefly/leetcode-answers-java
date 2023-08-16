@@ -1,6 +1,6 @@
 /**
  * <a href=https://leetcode.cn/problems/longest-common-prefix>14. 最长公共前缀</a>
- * @author firefly
+ * @Author phoebe
  * @date 2022/12/24
  */
 public class Leetcode_14_longestCommonPrefix {
