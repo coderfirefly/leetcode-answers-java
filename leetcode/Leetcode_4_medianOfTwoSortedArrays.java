@@ -17,33 +17,24 @@ public class Leetcode_4_medianOfTwoSortedArrays {
     }
 
     // 两个有序数组的第k的元素
-    private int getKthElement(int[] nums1, int[] nums2, int k) {
-        int len1 = nums1.length, len2 = nums2.length;
-        // 数组的起始查找位置
-        int index1 = 0, index2 = 0, kthElement = 0;
+    public int getKthElement(int[] nums1, int[] nums2, int k) {
+        int m = nums1.length, n = nums2.length, i = 0, j = 0;
         while (true) {
-            // nums1为空
-            if (index1 == len1) {
-                return nums2[index2 + k - 1];
+            if (i == m) {
+                return nums2[j + k - 1];
             }
-            // nums2 为空
-            if (index2 == len2) {
-                return nums1[index1 + k - 1];
+            if (j == n) {
+                return nums1[i + k - 1];
             }
-            // 循环结束
             if (k == 1) {
-                return Math.min(nums1[index1], nums2[index2]);
+                return Math.min(nums1[i], nums2[j]);
             }
-            int half = k / 2;
-            int newIndex1 = Math.min(index1 + half, len1) - 1;
-            int newIndex2 = Math.min(index2 + half, len2) - 1;
-            if (nums1[newIndex1] < nums2[newIndex2]) {
-                k -= newIndex1 - index1 + 1;
-                index1 = newIndex1 + 1;
+            if (nums1[i] < nums2[j]) {
+                i++;
             } else {
-                k -= newIndex2 - index2 + 1;
-                index2 = newIndex2 + 1;
+                j++;
             }
+            k--;
         }
     }
 }
