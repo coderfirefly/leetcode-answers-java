@@ -84,6 +84,7 @@ public class Leetcode_146_lruCache {
         }
 
         class DLinkedNode {
+            //  因为在超出capacity要删除hashmap里key-value pair 时必须要通过Node里的key来删除，hashmap无法通过value来删除
             int key;
             int value;
             DLinkedNode prev;

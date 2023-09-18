@@ -121,9 +121,7 @@ public class SortAlgorithms {
             heapify(array, len, i);
         }
         for (int i = len - 1; i >= 0; i--) {
-            int temp = array[i];
-            array[i] = array[0];
-            array[0] = temp;
+            swap(array, i, 0);
             heapify(array, i, 0);
         }
     }
@@ -138,11 +136,15 @@ public class SortAlgorithms {
             largest = right;
         }
         if (largest != i) {
-            int temp = array[i];
-            array[i] = array[largest];
-            array[largest] = temp;
+            swap(array, i, largest);
             heapify(array, length, largest);
         }
+    }
+
+    private static void swap(int[] array, int i, int j) {
+        int tmp = array[i];
+        array[i] = array[j];
+        array[j] = tmp;
     }
 
 

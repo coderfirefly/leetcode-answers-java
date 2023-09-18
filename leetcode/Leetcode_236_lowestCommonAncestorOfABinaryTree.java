@@ -10,10 +10,11 @@ public class Leetcode_236_lowestCommonAncestorOfABinaryTree {
 
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
-
+        // 在root的左右子树分别找到p和q，此时root就是最近公共节点；
         if (left != null && right != null) {
             return root;
         }
+        // 只在一边找到p或q，那么先找到的p或q就是最近公共节点
         return left != null ? left : right;
     }
 
